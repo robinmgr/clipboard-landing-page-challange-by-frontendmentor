@@ -1,0 +1,208 @@
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+}
+img{
+    max-width: 100%;
+}
+h2, h3{
+    color: hsl(210, 10%, 33%);
+  
+}
+p{
+    color: hsl(201, 11%, 66%);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0 auto 50px;
+}
+main{
+    width: 85%;
+    margin: 0 auto;
+}
+
+header{
+    background: url("images/bg-header-mobile.png");
+    background-size: cover;
+    height: 300px;
+}
+.logo{
+    width: 110px;
+    position: relative;
+    margin-top: 130px;
+}
+.downlaod-buttons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+button{
+    border: none;
+    border-radius: 100px;
+    padding: 15px;
+    flex: 0 0 300px;
+    margin: 10px auto;
+}
+button a{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-decoration: none; 
+}
+button.iOS{
+    background-color: hsl(171, 66%, 44%) ;
+    border-bottom: 3px solid rgb(15, 163, 153);
+    box-shadow: 1px 8px 15px rgba(56, 168, 151, 0.4);
+}
+button.mac{
+    background-color: hsl(233, 100%, 69%);
+    border-bottom:3px solid rgb(82, 99, 221);
+    box-shadow: 1px 8px 15px rgba(36, 45, 112, 0.4)
+}
+.downlaod-buttons{
+    margin: 40px auto;
+}
+
+.companies-logo{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.companies-logo img{
+    margin: 20px auto;
+}
+footer{
+    background-color: hsl(195, 12%, 94%);
+}
+.footer-logo{
+    width: 60px;
+    margin: 40px auto 0;
+}
+nav ul{
+    display: flex;
+    flex-flow: column;
+    padding: 0;
+    list-style-type: none;
+}
+nav a{
+    text-decoration: none;
+    color: hsl(214, 11%, 46%);
+}
+.social-links{
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0;
+}
+.nav-links li{
+    margin: 12px auto;
+}
+.social-links li{
+    padding: 15px;
+}
+main > div{
+    margin: 140px auto;
+}
+.introduction{
+    margin: 0 auto;
+}
+
+nav a:hover{
+     color: hsl(171, 66%, 44%);
+}
+.social-links img:hover{
+ filter: invert(0.5) sepia(1) saturate(20) hue-rotate(145deg) brightness(1);
+ 
+}
+button:hover{
+    opacity: 0.7;
+}
+
+@media screen and (min-width: 1024px){
+    header{
+        background: url("images/bg-header-desktop.png");
+        background-size: cover;
+    
+    }
+    
+    button{
+        flex-basis: 250px;
+         margin: auto 10px;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+
+    .snippets img{
+        float: left;
+        margin: 0 100px;
+        width: 50%;
+        position: relative;
+        margin-left: -130px;
+        margin-top: 50px;
+    }
+    .clipboard-features{
+        width: 40%;
+        float: left;
+        text-align: left;
+        margin: 50px auto 150px;
+    }
+    .clipboard-features h3{
+        font-size: 1.2em;
+    }
+    .access{
+        clear: both;
+    }
+    .tools-list{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    .tools-list div{
+        flex-basis: 300px;
+        margin: auto 20px;
+    }
+    .tools-list h3{
+        font-size: 1.2em;   
+     }
+    .companies-logo{
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    .footer-logo{
+        width: 50px;
+        margin:auto 0;
+    }
+
+    
+    nav{
+        display:flex; 
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        
+      
+    }
+    .nav-links{
+        width: 50%;
+        height: 100px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .nav-links li{
+       margin-left: 0;
+    }
+   .info{
+       width: 50vw;
+       margin: 20px auto;
+   }
+}
